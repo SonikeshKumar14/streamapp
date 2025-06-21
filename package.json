@@ -2,7 +2,7 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "backend/app.js",
   "scripts": {
     "dev": "nodemon backend/app.js",
     "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
