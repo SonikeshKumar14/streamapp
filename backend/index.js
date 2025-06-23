@@ -11,6 +11,8 @@ import path from "path";
 
 dotenv.config();
 
+const PORT = process.env.PORT || 3000;
+
 const __dirname = path.resolve();
 
 const app = express();
@@ -32,7 +34,7 @@ app.get("*", (req, res) => {
     res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"))
 })
 
-const PORT = process.env.PORT || 3000;
+
 app.listen(PORT, () => {
     connectDB();
     console.log(`Server listen at port ${PORT}`);
