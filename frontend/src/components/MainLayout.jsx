@@ -20,7 +20,7 @@ const MainLayout = () => {
     const token = localStorage.getItem("token");
 
     if (!user && token) {
-      axios.get("http://localhost:8000/api/v1/user/me", {
+      axios.get("https://streamapp-ufpw.onrender.com/api/v1/user/me", {
         withCredentials: true,
       })
       .then((res) => {

@@ -5,7 +5,7 @@ import { readFileAsDataURL } from "@/lib/utils";
 import { useDispatch, useSelector } from "react-redux";
 import { setPosts } from "@/redux/postSlice";
 
-const API_BASE_URL = "http://localhost:8000/api/v1";
+const API_BASE_URL = "https://streamapp-ufpw.onrender.com/api/v1";
 
 const usePostForm = ({ existingPost = null, onClose, isEditMode = false }) => {
   const [title, setTitle] = useState(existingPost?.title || "");

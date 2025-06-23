@@ -53,7 +53,7 @@ const VideoDetail = () => {
       if (newLikedState) setDisliked(false);
 
       await axios.put(
-        `http://localhost:8000/api/v1/activity/like/${video._id}`,
+        `https://streamapp-ufpw.onrender.com/api/v1/activity/like/${video._id}`,
         {},
         {
           headers: {
@@ -95,7 +95,7 @@ const VideoDetail = () => {
       if (newDislikedState) setLiked(false);
 
       await axios.put(
-        `http://localhost:8000/api/v1/activity/dislike/${video._id}`,
+        `https://streamapp-ufpw.onrender.com/api/v1/activity/dislike/${video._id}`,
         {},
         {
           headers: {

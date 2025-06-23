@@ -18,7 +18,7 @@ const LikedVideosTable = () => {
 
   const fetchLikedUsers = async () => {
     try {
-      const { data } = await axios.get("http://localhost:8000/api/v1/activity/liked-users");
+      const { data } = await axios.get("https://streamapp-ufpw.onrender.com/api/v1/activity/liked-users");
 
       if (data.success) {
         setLikedUsers(data?.likedUsers);

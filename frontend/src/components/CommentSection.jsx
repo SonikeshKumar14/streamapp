@@ -16,7 +16,7 @@ const CommentSection = ({ postId }) => {
 
     try {
       const { data } = await axios.post(
-        `http://localhost:8000/api/v1/post/comment/${postId}`,
+        `https://streamapp-ufpw.onrender.com/api/v1/post/comment/${postId}`,
         { text: commentInput },
         { withCredentials: true }
       );

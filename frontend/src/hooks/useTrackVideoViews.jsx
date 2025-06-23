@@ -16,7 +16,7 @@ const useTrackVideoViews = (videoId, onViewCounted) => {
       if (!hasCounted && videoId) {
         try {
           const response = await axios.put(
-            `http://localhost:8000/api/v1/activity/${videoId}/view`,
+            `https://streamapp-ufpw.onrender.com/api/v1/activity/${videoId}/view`,
             {},
             {
               withCredentials: true,

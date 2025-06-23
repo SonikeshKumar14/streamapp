@@ -11,7 +11,7 @@ const useDeletePost = () => {
   const handleDeletePost = async (postId, onSuccess) => {
     setLoading(true);
     try {
-      const res = await axios.delete(`http://localhost:8000/api/v1/post/delete/${postId}`, {
+      const res = await axios.delete(`https://streamapp-ufpw.onrender.com/api/v1/post/delete/${postId}`, {
         withCredentials: true,
       });
 

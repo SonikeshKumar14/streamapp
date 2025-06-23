@@ -37,7 +37,7 @@ const Profile = () => {
     const fetchProfile = async () => {
       try {
         const { data } = await axios.get(
-          `http://localhost:8000/api/v1/user/profile/${user?._id}`
+          `https://streamapp-ufpw.onrender.com/api/v1/user/profile/${user?._id}`
         );
         if (data.success) {
           setFormData((prev) => ({
@@ -83,7 +83,7 @@ const Profile = () => {
       }
 
       const { data } = await axios.put(
-        "http://localhost:8000/api/v1/user/edit/profile",
+        "https://streamapp-ufpw.onrender.com/api/v1/user/edit/profile",
         formDataToSend,
         {
           headers: { "Content-Type": "multipart/form-data" },
@@ -121,7 +121,7 @@ const Profile = () => {
     if (!confirmDelete) return;
 
     try {
-      await axios.delete("http://localhost:8000/api/v1/user/delete", {
+      await axios.delete("https://streamapp-ufpw.onrender.com/api/v1/user/delete", {
         withCredentials: true,
       });
 
